@@ -6,6 +6,7 @@ import 'package:oneapp/4bottombar_widget.dart';
 import 'package:oneapp/5Image_widget.dart';
 import 'package:oneapp/6row_widget.dart';
 import 'package:oneapp/7column_widget.dart';
+import 'package:oneapp/8expanded_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -75,6 +76,11 @@ class _MyHomePageState extends State<MyHomePage> {
     /*===============================
     7. Flutter Column Widget examples
     ===============================*/
-    return ColumnWidget();
+    // return ColumnWidget();
+
+    /*===============================
+    8. Flutter Expanded Widget examples
+    ===============================*/
+    return ExpandedWidget();
   }
 }
