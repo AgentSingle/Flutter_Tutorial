@@ -5,6 +5,7 @@ import 'package:oneapp/3appbar_widget.dart';
 import 'package:oneapp/4bottombar_widget.dart';
 import 'package:oneapp/5Image_widget.dart';
 import 'package:oneapp/6row_widget.dart';
+import 'package:oneapp/7column_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -67,8 +68,13 @@ class _MyHomePageState extends State<MyHomePage> {
     // return ImageWidget();
 
     /*===============================
-    5. Flutter Row Widget examples
+    6. Flutter Row Widget examples
     ===============================*/
-    return RowWidget();
+    // return RowWidget();
+
+    /*===============================
+    7. Flutter Column Widget examples
+    ===============================*/
+    return ColumnWidget();
   }
 }
