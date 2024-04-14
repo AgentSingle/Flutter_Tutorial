@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:oneapp/tute_one.dart';
-import 'package:oneapp/tute_two.dart';
+import 'package:oneapp/1text_widget.dart';
+import 'package:oneapp/2container_widget.dart';
+import 'package:oneapp/3appbar_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,13 +39,18 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     /*===============================
-    Tutorial-One Flutter text examples
+    1. Flutter text examples
     ===============================*/
-    return TuteOne();
+    // return TextWidget();
 
     /*===============================
-    Tutorial-Two Flutter container examples
+    2. Flutter container examples
     ===============================*/
-    // return TuteTwo();
+    // return ContainerWidget();
+
+    /*===============================
+    3. Flutter container examples
+    ===============================*/
+    return AppbarWidget();
   }
 }
