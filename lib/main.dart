@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:oneapp/1text_widget.dart';
 import 'package:oneapp/2container_widget.dart';
 import 'package:oneapp/3appbar_widget.dart';
+import 'package:oneapp/4bottombar_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,8 +50,13 @@ class _MyHomePageState extends State<MyHomePage> {
     // return ContainerWidget();
 
     /*===============================
-    3. Flutter container examples
+    3. Flutter App Bar examples
     ===============================*/
-    return AppbarWidget();
+    // return AppbarWidget();
+
+    /*===============================
+    4. Flutter Bottom Bar examples
+    ===============================*/
+    return BottomBarWidget();
   }
 }

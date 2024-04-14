@@ -20,6 +20,7 @@ class _AppbarWidgetState extends State<AppbarWidget> {
             icon: const Icon(Icons.search),
             onPressed: () {
               // Add search functionality here
+              print('Do something');
             },
           ),
           IconButton(
