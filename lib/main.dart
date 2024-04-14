@@ -3,6 +3,8 @@ import 'package:oneapp/1text_widget.dart';
 import 'package:oneapp/2container_widget.dart';
 import 'package:oneapp/3appbar_widget.dart';
 import 'package:oneapp/4bottombar_widget.dart';
+import 'package:oneapp/5Image_widget.dart';
+import 'package:oneapp/6row_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -57,6 +59,16 @@ class _MyHomePageState extends State<MyHomePage> {
     /*===============================
     4. Flutter Bottom Bar examples
     ===============================*/
-    return BottomBarWidget();
+    // return BottomBarWidget();
+
+    /*===============================
+    5. Flutter Image Widget examples
+    ===============================*/
+    // return ImageWidget();
+
+    /*===============================
+    5. Flutter Row Widget examples
+    ===============================*/
+    return RowWidget();
   }
 }
