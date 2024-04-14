@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class TuteOne extends StatefulWidget {
@@ -16,7 +18,16 @@ class _TuteOneState extends State<TuteOne> {
         // child: Text('This is First tutorial'),
 
         /* Text Styling */
-
+        child: Text(
+          'Styling Text',
+          style: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
+            color: Colors.blue,
+            letterSpacing: 1.5,
+            fontStyle: FontStyle.italic,
+          ),
+        ),
       ),
     );
   }
