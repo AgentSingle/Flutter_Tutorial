@@ -1,12 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:oneapp/1text_widget.dart';
-import 'package:oneapp/2container_widget.dart';
-import 'package:oneapp/3appbar_widget.dart';
-import 'package:oneapp/4bottombar_widget.dart';
-import 'package:oneapp/5Image_widget.dart';
-import 'package:oneapp/6row_widget.dart';
-import 'package:oneapp/7column_widget.dart';
-import 'package:oneapp/8expanded_widget.dart';
+import 'package:oneapp/1basic_widget_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,43 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     /*===============================
-    1. Flutter text examples
+    1. Flutter Basic Widget
     ===============================*/
-    // return TextWidget();
-
-    /*===============================
-    2. Flutter container examples
-    ===============================*/
-    // return ContainerWidget();
-
-    /*===============================
-    3. Flutter App Bar examples
-    ===============================*/
-    // return AppbarWidget();
-
-    /*===============================
-    4. Flutter Bottom Bar examples
-    ===============================*/
-    // return BottomBarWidget();
-
-    /*===============================
-    5. Flutter Image Widget examples
-    ===============================*/
-    // return ImageWidget();
-
-    /*===============================
-    6. Flutter Row Widget examples
-    ===============================*/
-    // return RowWidget();
-
-    /*===============================
-    7. Flutter Column Widget examples
-    ===============================*/
-    // return ColumnWidget();
-
-    /*===============================
-    8. Flutter Expanded Widget examples
-    ===============================*/
-    return ExpandedWidget();
+    return BasicFlutterWidget();
   }
 }
