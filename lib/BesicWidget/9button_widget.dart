@@ -8,6 +8,14 @@ class ButtonWidget extends StatefulWidget {
 }
 
 class _ButtonWidgetState extends State<ButtonWidget> {
+
+  String selectedFruit = 'Apple';
+
+  void onSelectedChoice(String choice) {
+    // Handle the selected choice here
+    print("You selected: $choice, PopUpMenu Button Clicked");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +46,7 @@ class _ButtonWidgetState extends State<ButtonWidget> {
                 textStyle: MaterialStatePropertyAll<TextStyle>(TextStyle(fontSize: 18.0)),
                 side: MaterialStatePropertyAll<BorderSide>(BorderSide(color: Colors.pinkAccent)),
               ),
-              child: const Text("This is a text button"),
+              child: const Text("This is a text button with style"),
             ),
 
 
@@ -63,7 +71,7 @@ class _ButtonWidgetState extends State<ButtonWidget> {
                 padding: MaterialStatePropertyAll<EdgeInsetsGeometry>(EdgeInsets.all(12.0)),
                 elevation: MaterialStatePropertyAll<double>(5),
               ),
-              child: const Text('Elevated Button'),
+              child: const Text('Elevated Button with Style'),
             ),
 
 
@@ -88,6 +96,65 @@ class _ButtonWidgetState extends State<ButtonWidget> {
               ),
               child: const Text('Outlined Button With Style'),
             ),
+
+
+            //  ------------[ Icon button ]------------
+            IconButton(
+              onPressed: () {
+                print("Icon Button Clicked");
+              },
+              icon: const Icon(Icons.insert_emoticon),
+            ),
+
+
+            //  ------------[ Floating action button ]------------
+            FloatingActionButton.extended(
+              onPressed: () {
+                print("This is Floating action button");
+              },
+              label: const Text('Add'),
+              icon: const Icon(Icons.add),
+            ),
+
+
+            //  ------------[ Dropdown Button ]------------
+            DropdownButton<String>(
+              value: selectedFruit, // Currently selected value
+              onChanged: (String? newFruit) {
+                print("Dropdown Button Clicked");
+                // Update state when user selects a new fruit
+                setState(() {
+                  selectedFruit = newFruit!;
+                });
+              },
+              items: <String>['Apple', 'Banana ', 'cherry'].map<DropdownMenuItem<String>>((String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Text(value),
+                );
+              }).toList(),
+            ),
+
+
+            //  ------------[ PopupMenu Button ]------------
+            PopupMenuButton<String>(
+              icon: Icon(Icons.menu), // Popup button icon
+              onSelected: onSelectedChoice,
+              itemBuilder: (BuildContext context) => [
+                PopupMenuItem<String>(
+                  value: 'Option 1',
+                  child: Text('Option 1'),
+                ),
+                PopupMenuItem<String>(
+                  value: 'Option 2',
+                  child: Text('Option 2'),
+                ),
+                PopupMenuItem<String>(
+                  value: 'Option 3',
+                  child: Text('Option 3'),
+                ),
+              ],
+            )
 
           ],
         ),

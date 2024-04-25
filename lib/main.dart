@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:oneapp/1basic_widget_flutter.dart';
+import 'package:oneapp/2Inputs_widget_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,6 +40,11 @@ class _MyHomePageState extends State<MyHomePage> {
     /*===============================
     1. Flutter Basic Widget
     ===============================*/
-    return BasicFlutterWidget();
+    // return BasicFlutterWidget();
+
+    /*===============================
+    1. Flutter Input Widgets
+    ===============================*/
+    return InputWidgets();
   }
 }
